@@ -83,11 +83,16 @@ Follow these commands in order from your terminal inside the repository root dir
 git clone https://github.com/ArghyaM-codes/Airfoil-self-noise-prediction.git
 cd Airfoil-self-noise-prediction
 ```
-Make sure Python is installed. Install the required dependencies using:
-
-```bash
-pip install -r requirements.txt
-```
+2. **Create and Activate Virtual Environment:**
+   ```bash
+   python -m venv venv
+   # On Windows:
+   venv\Scripts\activate
+   # On macOS/Linux:
+   source venv/bin/activate
+3. **Install Dependencies:**
+   ```bash
+   pip install -r requirements.txt
 
 ### 2. Run Automated Tests
 
