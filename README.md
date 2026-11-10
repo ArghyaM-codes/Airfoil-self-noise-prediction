@@ -93,7 +93,10 @@ cd Airfoil-self-noise-prediction
 3. **Install Dependencies:**
    ```bash
    pip install -r requirements.txt
-
+4. **Run Model Notebook:**
+   ```bash
+   jupyter notebook notebooks/airfoil_analysis.ipynb
+```
 ### 2. Run Automated Tests
 
 The project includes unit tests for the reusable model evaluation and prediction visualization utilities.
