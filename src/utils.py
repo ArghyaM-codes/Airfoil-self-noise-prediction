@@ -1,20 +1,22 @@
 import matplotlib.pyplot as plt
 import numpy as np
-from sklearn.metrics import mean_squared_error, r2_score
+from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
 
 
 def evaluate_model(y_true, y_pred):
     """Calculates and prints MSE, RMSE, and R2 score for model predictions."""
+    mae = mean_absolute_error(y_true, y_pred)
     mse = mean_squared_error(y_true, y_pred)
     rmse = np.sqrt(mse)
     r2 = r2_score(y_true, y_pred)
 
     print("--- Model Performance Metrics ---")
+    print(f"Mea Absolute Error (MAE): {mae:.4f}")
     print(f"Mean Squared Error (MSE): {mse:.4f}")
     print(f"Root Mean Squared Error (RMSE): {rmse:.4f}")
     print(f"R^2 Score: {r2:.4f}")
 
-    return {"mse": mse, "rmse": rmse, "r2": r2}
+    return {"mae": mae, "mse": mse, "rmse": rmse, "r2": r2}
 
 
 def plot_predictions(y_true, y_pred, title="Actual vs Predicted Sound Pressure"):
