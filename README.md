@@ -142,7 +142,7 @@ for metric, value in metrics.items():
 
 ## 7. Links & Resources
 
-- **Presentation Slides (PDF):** [View Slides](docs/Team_Presentation_Slides.pdf)
+- **Presentation Slides (PDF):** [View Slides](docs/Team_Presentation_Slides-2.pdf)
 - **Video Demonstration:** [Watch Video (≤ 5 mins)](https://youtu.be/fMyGzRbEbVQ)
 
 ---
